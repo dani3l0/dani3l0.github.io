@@ -1,222 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-		<title>dani3l0</title>
-		<script async src="https://curious-calm-mackerel.ngrok-free.app/tracker.js" data-ackee-server="https://curious-calm-mackerel.ngrok-free.app" data-ackee-domain-id="931d306a-7840-4d14-ad2d-ed6b8ef6a98e" data-ackee-opts='{ "detailed": true, "ignoreOwnVisits": false }'></script>
-		<script type="module" crossorigin src="/assets/index-534989f7.js"></script>
-		<link rel="stylesheet" href="/assets/index-7f98b2a2.css">
-	</head>
-	<body>
-		<div id="loading">
-			<div class="bg top"></div>
-			<div class="bg bottom"></div>
-			<div class="loading">
-				<div class="loader"></div>
-				<div class="text">Loading assets... (<b id="progress">0</b>%)</div>
-			</div>
-			<div class="finished">
-				<i>done</i>
-				<div class="text">Done!</div>
-			</div>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Please wait...</title>
+	
+	
+	<script async src="https://wiki.archi-tech.com.pl:8080/tracker.js" data-ackee-server="https://wiki.archi-tech.com.pl:8080" data-ackee-domain-id="d37d73e7-5cfc-4d62-badb-eaddb12c0d76" data-ackee-opts="{ &quot;detailed&quot;: true, &quot;ignoreOwnVisits&quot;: false }"></script>
+  <script type="module" crossorigin src="/assets/index-600af176.js"></script>
+  <link rel="stylesheet" href="/assets/index-c3831702.css">
+</head>
+<body>
+
+	<!-- Loading screen -->
+	<div id="init">
+		<div class="init-center">
+			<div class="loading-dot"></div>
+			<div class="loading-text"></div>
 		</div>
-		<div class="background">
-			<div id="background">
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-			</div>
-			<canvas id="experience" class="blurred"></canvas>
-		</div>
-		<div class="page main">
-			<div></div>
-			<div class="wrapper">
-				<div class="my_name">Hi, my name is Daniel.</div>
-				<div class="whoami">I love creating software.</div>
-				<button class="highlighted" onclick="pages.show(1)">
-					<i>explore</i>
-					<div>Explore my portfolio</div>
-				</button>
-			</div>
-			<div class="findme">
-				<div>Find me on</div>
-				<a href="https://t.me/dani3l0" target="_blank"><button class="expanding chip" style="--hue: 200">
-					<i>telegram</i>
-					<div style="width: 8ch">Telegram</div>
-				</button></a>
-				<a href="mailto:daniel.jank@protonmail.com" target="_blank"><button class="expanding chip" style="--hue: 30">
-					<i>email</i>
-					<div style="width: 6ch">E-Mail</div>
-				</button></a>
-				<a href="https://github.com/dani3l0" target="_blank"><button class="expanding chip" style="--hue: 330">
-					<i>code</i>
-					<div style="width: 6ch">GitHub</div>
-				</button></a>
-			</div>
-		</div>
-		<div class="page down">
-			<div class="scrollable">
-				<div class="header">
-					<i>person</i>
-					<div>
-						<div class="title">Who am I?</div>
-						<div class="subtitle">A few words about myself</div>
-					</div>
-				</div>
-				<div class="wrapper">
-					<p>I'm a friendly and creative person. I love learning new things and creating cool projects. My wide knowledge can become handy in many situations :D. I like working with other people.<br>
-						Also, I always do my best.</p>
-					<div class="identificator">
-						<div>
-							<p>Name</p>
-							<b>Daniel</b>
+	</div>
+
+
+	<!-- Room background -->
+	<canvas id="experience"></canvas>
+
+
+	<!-- Navigation bar -->
+	<nav class="hidden">
+		<img src="https://avatars.githubusercontent.com/u/111448519">
+		<a to="main">
+			<i>home</i>
+			<b>Home</b>
+		</a>
+		<a to="about">
+			<i>face</i>
+			<b>About me</b>
+		</a>
+		<a to="skills">
+			<i>psychology</i>
+			<b>Skills</b>
+		</a>
+		<a to="contact">
+			<i>contact_phone</i>
+			<b>Contact</b>
+		</a>
+		<a to="settings">
+			<i>settings</i>
+			<b>Settings</b>
+		</a>
+	</nav>
+
+	<!-- Page manager -->
+	<div class="wrapper">
+
+			<!-- Home page -->
+			<section id="main" lookAt="-3,1.8,3.75,60" t="Home"><s>
+				<span>
+					<h1>Hi, I'm Daniel</h1>
+					<div class="switching-twoline">
+						<div class="switching">
+							<p>Creative</p>
+							<p>Awesome</p>
+							<p>Independent</p>
+							<p>Fearless</p>
+							<p>Pragmatic</p>
+							<p>Imaginative</p>
+							<p>Trustworthy</p>
 						</div>
-						<div>
-							<p>Gender</p>
-							<b>Male</b>
-						</div>
-						<div>
-							<p>Age</p>
-							<b>20</b>
-						</div>
-						<div>
-							<p>From</p>
-							<b>Poland</b>
+						<div class="switching">
+							<p>Developer</p>
+							<p>Sysadmin</p>
+							<p>Self-Hoster</p>
+							<p>Linux user</p>
+							<p>Inventor</p>
+							<p>Designer</p>
+							<p>Friend</p>
 						</div>
 					</div>
-					<div class="personality">
+				</span>
+				<p class="version">folio v2.0.0-alpha</p>
+			</s></section>
+
+
+			<!-- About me -->
+			<section id="about" lookAt="-2.5,1.2,3,70" t="About me"><s>
+				<header>
+					<i>face</i>
+					<h1>About me</h1>
+					<p>A quick introduction who I am</p>
+				</header>
+				<span>
+					<div class="box id-card">
+						<img src="https://avatars.githubusercontent.com/u/111448519">
 						<div>
+							<b>
+								<p>Name</p>
+								<h2>Daniel</h2>
+							</b>
+							<b>
+								<p>Age</p>
+								<h2 class="int" id="about-age"></h2>
+							</b>
+							<b>
+								<p>From</p>
+								<h2>Poland</h2>
+							</b>
+						</div>
+					</div>
+					<div class="box character-card">
+						<b style="--color: #69F">
 							<i>mood</i>
 							<p>Friendly</p>
-						</div>
-						<div>
+						</b>
+						<b style="--color: #F46">
 							<i>handshake</i>
 							<p>Helpful</p>
+						</b>
+						<b style="--color: #F72">
+							<i>self_improvement</i>
+							<p>Patient</p>
+						</b>
+						<b style="--color: #B8F">
+							<i>groups</i>
+							<p>Cooperative</p>
+						</b>
+						<b style="--color: #0FF">
+							<i>diamond</i>
+							<p>Creative</p>
+						</b>
+						<b style="--color: #0F8">
+							<i>person_play</i>
+							<p>Responsible</p>
+						</b>
+						<b style="--color: #F69">
+							<i>volunteer_activism</i>
+							<p>Understanding</p>
+						</b>
+						<b style="--color: #FB0">
+							<i>loyalty</i>
+							<p>Loyal</p>
+						</b>
+					</div>
+					<div class="box expandable">
+						<div class="overview">
+							<i>person</i>
+							<b>Just a few words</b>
+							<i>expand_more</i>
 						</div>
-						<div>
-							<i>bolt</i>
-							<p>Efficient</p>
+						<div class="content">
+							<p>A guy who never turns off his computer(s).</p>
+							<p>This guy can be a kinda cool buddy with many interesting ideas, great sense of humor and a very-original approach. It's hard to make him give up, even if something is impossible. He likes listening to music, watching movies and playing with animals. Unfortunately, he can't find time for any...</p>
+							<p>Also, never say Windows around him. This causes his blood to boil.</p>
 						</div>
+					</div>
+				</span>
+			</s></section>
+
+
+			<!-- Skills -->
+			<section id="skills" lookAt="0.5,1.8,-0.5,55" t="Skills"><s>
+				<header>
+					<i>psychology</i>
+					<h1>Skills</h1>
+					<p>What exactly I am capable of</p>
+				</header>
+				<div class="box">
+					<div class="h">
+						<i>code</i>
 						<div>
-							<i>verified</i>
-							<p>Reliable</p>
+							<h1>Programming</h1>
+							<p>That's what I do 90% of the time</p>
+						</div>
+					</div>
+					<div class="skills">
+						<div style="--color: #F55">
+							<b><u>HTML</u><u>CSS</u></b>
+							<p style="--width: 100%"></p>
+						</div>
+						<div style="--color: #FE0">
+							<b><u>JS</u></b>
+							<p style="--width: 90%"></p>
+						</div>
+						<div style="--color: #0FD">
+							<b><u>Go</u></b>
+							<p style="--width: 30%"></p>
+						</div>
+						<div style="--color: #4F8">
+							<b><u>Bash</u></b>
+							<p style="--width: 55%"></p>
+						</div>
+						<div style="--color: #FA0">
+							<b><u>Python</u></b>
+							<p style="--width: 80%"></p>
+						</div>
+						<div style="--color: #F59">
+							<b><u>C++</u></b>
+							<p style="--width: 50%"></p>
+						</div>
+						<div style="--color: #88B">
+							<b><u>PHP</u><u>Trash</u></b>
+							<p style="--width: 45%"></p>
+						</div>
+						<div style="--color: #68F">
+							<b><u>SQL</u><u>NoSQL</u></b>
+							<p style="--width: 25%"></p>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="buttons">
-				<button class="expanding" onclick="pages.show(0)">
-					<i>expand_less</i>
-					<div style="width: 4ch">Back</div>
-				</button>
-				<button class="highlighted" onclick="pages.show(2)">
-					<i>psychology</i>
-					<div>Skills</div>
-				</button>
-			</div>
-		</div>
-		<div class="page down">
-			<div class="scrollable">
-				<div class="header">
-					<i>psychology</i>
-					<div>
-						<div class="title">My skills</div>
-						<div class="subtitle">What I am best at and why</div>
+				<div class="box">
+					<div class="h">
+						<i>more</i>
+						<div>
+							<h1>Other activities</h1>
+							<p>Still very interesting</p>
+						</div>
 					</div>
-				</div>
-				<div class="wrapper">
-					<p>Software and computers are my second world. Started playing with them in my childhood. Since then, I wrote thousands lines of code, troubleshooted hundreds of problems and tried dozens of completely different things.</p>
-					<p>I really enjoy working with computer and I'm quite good at it.</p>
-					<p>Still I'm learning new, awesome technologies to create outstanding projects in the future.</p>
-					<div class="list">
-						<b>
-							<i>code</i>
-							<div>
-								<div class="title">Software development</div>
-								<div class="desc">I love creating clean, reliable and functional applications.</div>
-							</div>
+					<div class="hardware-card">
+						<b style="--color: #F57">
+							<i>devices</i>
+							<u>
+								<p>Hardware</p>
+								<s>Custom setups, overclocking, modded BIOSes</s>
+							</u>
 						</b>
-						<b>
-							<i>settings</i>
-							<div>
-								<div class="title">System administration</div>
-								<div class="desc">I know how to customize and manage OS so it's highly customizable and rock-solid.</div>
-							</div>
+						<b style="--color: #58F">
+							<i>terminal</i>
+							<u>
+								<p>Administration</p>
+								<s>OS management, app deployment & self-hosting</s>
+							</u>
 						</b>
-						<b>
+						<b style="--color: #2D6">
 							<i>memory</i>
-							<div>
-								<div class="title">Hardware</div>
-								<div class="desc">I enjoy assembling computers and playing with microcontrollers such as STMs or Raspberry Pis.</div>
-							</div>
+							<u>
+								<p>Microcontrollers</p>
+								<s>Circuit boards with custom wiring & my own software</s>
+							</u>
 						</b>
-						<b>
-							<i>view_in_ar</i>
-							<div>
-								<div class="title">3D modelling</div>
-								<div class="desc">I know basics of Blender and can add 3D experience to web pages. That's what I'm focused on rn :)</div>
-							</div>
+						<b style="--color: #FB0">
+							<i>precision_manufacturing</i>
+							<u>
+								<p>3D Modelling</p>
+								<s>Simple scenes in Blender for cool 3D web experiences</s>
+							</u>
 						</b>
-						<b>
-							<i>policy</i>
-							<div>
-								<div class="title">Pentesting</div>
-								<div class="desc">Not really a passion, but I started in various CTFs and achieved quite good results in them.</div>
-							</div>
+						<b style="--color: #A5F">
+							<i>security</i>
+							<u>
+								<p>Cybersecurity</p>
+								<s>Encryption, privacy, pentesting, reversing</s>
+							</u>
+						</b>
+						<b style="--color: #0DF">
+							<i>colorize</i>
+							<u>
+								<p>Soldering</p>
+								<s>Persistently joining electronic parts together</s>
+							</u>
 						</b>
 					</div>
 				</div>
-			</div>
-			<div class="buttons">
-				<button class="expanding" onclick="pages.show(1)">
-					<i>expand_less</i>
-					<div style="width: 4ch">Back</div>
-				</button>
-				<button class="highlighted" onclick="pages.show(3)">
-					<i>mail</i>
-					<div>Contact</div>
-				</button>
-			</div>
-		</div>
-		<div class="page down">
-			<div class="scrollable">
-				<div class="header">
-					<i>mail</i>
-					<div>
-						<div class="title">Contact</div>
-						<div class="subtitle">How to reach me</div>
+				<div class="box expandable">
+					<div class="overview">
+						<i>construction</i>
+						<b>The way it all started</b>
+						<i>expand_more</i>
+					</div>
+					<div class="content">
+						<p>As a child, I was supposed to play games. However, games started to be boring, so I decided to mess with my OS a bit. Enjoyed it.</p>
+						<p>By the time, Windows was getting more & more annoying. Finally, at the age of 13 I got rid of it and never came back. I wanted to full have control over my computer and decide how I maintain my OS. Since then, I pray to Unix/Linux every day.</p>
+						<p>The more I knew, the more stuff I wanted to control on my own. I enjoyed being in a FOSS world and replaced nearly all proprietary software with open source alternatives. My whole time at the computer was solving issues, tweaking my OS, reading source code and finally... creating my own projects!</p>
+						<p>Later I started building my own PC setups, because my mini PC with iGPU was too weak for 3D Modelling (see this website's background). Of course, enjoyed it. Now I can create very custom hardware for special purposes.</p>
 					</div>
 				</div>
-				<div class="wrapper">
-					<p>Hey, I don't have so many social media accounts (I'm a privacy freak)</p>
-					<p>However, don't hesitate and feel free to contact me via provided services. I will be very happy to respond and talk with you :)</p>
-					<p style="opacity: .5; margin: 24px 0;">BTW, this website was entirely designed by myself</p>
-					<div class="findme">
-						<div>Find me on</div>
-						<a href="https://t.me/dani3l0" target="_blank"><button class="expanding chip" style="--hue: 200">
-							<i>telegram</i>
-							<div style="width: 8ch">Telegram</div>
-						</button></a>
-						<a href="mailto:daniel.jank@protonmail.com" target="_blank"><button class="expanding chip" style="--hue: 30">
+			</s></section>
+
+
+			<!-- Contact -->
+			<section id="contact" lookAt="1.4,1.75,2,-5" t="Contact"><s>
+				<header>
+					<i>contact_phone</i>
+					<h1>Contact</h1>
+					<p>Feel free to ping me :~)</p>
+				</header>
+				<span>
+					<div class="box clickables social">
+						<a style="--color: #F70" href="mailto:daniel.jank@protonmail.com">
 							<i>email</i>
-							<div style="width: 6ch">E-Mail</div>
-						</button></a>
-						<a href="https://github.com/dani3l0" target="_blank"><button class="expanding chip" style="--hue: 330">
-							<i>code</i>
-							<div style="width: 6ch">GitHub</div>
-						</button></a>
+							<div>
+								<p>E-Mail</p>
+								<u>daniel.jank@protonmail.com</u>
+							</div>
+						</a>
+						<a style="--color: #888" href="https://github.com/dani3l0" target="_blank">
+							<i class="bi bi-github"></i>
+							<div>
+								<p>GitHub</p>
+								<u>@dani3l0</u>
+							</div>
+						</a>
+						<a style="--color: #6BF" href="https://t.me/dani3l0" target="_blank">
+							<i class="bi-telegram"></i>
+							<div>
+								<p>Telegram</p>
+								<u>@dani3l0</u>
+							</div>
+						</a>
+						<a style="--color: #A6F" href="https://discord.com/users/1084100299096068126" target="_blank">
+							<i class="bi bi-discord"></i>
+							<div>
+								<p>Discord</p>
+								<u>@dani3l0_dc</u>
+							</div>
+						</a>
 					</div>
-				</div>
-			</div>
-			<div class="buttons">
-				<button class="expanding" onclick="pages.show(2)">
-					<i>expand_less</i>
-					<div style="width: 4ch">Back</div>
-				</button>
-			</div>
-		</div>
-	</body>
-	
+					<div class="box expandable">
+						<div class="overview">
+							<i>help</i>
+							<b>Why only these?</b>
+							<i>expand_more</i>
+						</div>
+						<div class="content">
+							<p>What did you expect? I'm not using central data harvesters like Facebook, Google, Micro$oft, etc.</p>
+							<p>Privacy is one concern, user experience is another. Can you imagine modern services without ads and tracking? I can, and they are definitely not the aboves. I prefer to just do stuff I want to do, not to wait ages for app to open, then be bombed with ads and tracking scripts and finally be banned because I didn't send my ID.</p>
+						</div>
+					</div>
+				</span>
+			</s></section>
+
+			<!-- Settings -->
+			<section id="settings" lookAt="-0.3,2.1,2,-90" t="Settings"><s>
+				<header>
+					<i>settings</i>
+					<h1>Settings</h1>
+				</header>
+				<span>
+					<p style="text-align: center;margin: 64px 0 0;font-size: 24px;">Coming soon!</p>
+					<p style="text-align: center;margin: 8px 0 128px;opacity: .6;font-weight: bold;">I still need to finish ALL the details, fix hidden bugs and cleanup some code<br>
+					Being a perfectionist sucks, I hate this</p>
+				</span>
+			</s></section>
+
+	</div>
+
+</body>
 </html>
