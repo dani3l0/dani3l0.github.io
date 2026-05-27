@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<title>dani3l0 - Redirect</title>
+	</head>
+	<body>
+		<div class="center">
+			<div class="wow"></div>
+			<div class="text">You are being redirected...</div>
+			<div class="incase">If that doesn't work, <a href="https://djank.me">click here</a></div>
+		</div>
+	</body>
+	<script>
+		window.addEventListener("DOMContentLoaded", setTimeout(() => window.location.href = "https://djank.me", 3000))
+	</script>
+	<style>
+		body, html {
+			background: #000;
+			color: #FFF;
+			font-family: monospace;
+		}
+		.center {
+			position: fixed;
+			text-align: center;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		@keyframes loading {
+			0% {transform: rotateZ(0)}
+			100% {transform: rotateZ(360deg)}
+		}
+		.wow {
+			position: relative;
+			width: 64px;
+			height: 64px;
+			border-radius: 64px;
+			background: #333;
+			margin: 20px auto;
+			animation: loading 1s infinite linear;
+		}
+		.wow::before {
+			content: " ";
+			position: absolute;
+			width: 40px;
+			height: 40px;
+			background: #888;
+			top: 6px;
+			left: 50%;
+			transform: translateX(-50%);
+			border-radius: inherit;
+		}
+		@keyframes text {
+			0% { width: 24ch; }
+			75% { width: 27ch; }
+			100% { width: 24ch; }
+		}
+		.text {
+			font-size: 24px;
+			margin-bottom: 8px;
+			white-space: pre;
+			overflow: hidden;
+			animation: text 1.5s infinite;
+		}
+		@keyframes notworking {
+			0% { opacity: 0; }
+			80% { opacity: 0; }
+			100% { opacity: 1; }
+		}
+		.incase {
+			color: #888;
+			animation: notworking 5s;
+		}
+		a {
+			color: #68F;
+			text-decoration: underline;
+		}
+	</style>
+</html>
